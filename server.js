@@ -1,11 +1,11 @@
 const http = require('http')
-const prod = require('./data/products.json')
+const { getProd } = require('./contorller/prod.control')
 
 //creating a method that create a request and response
 const server = http.createServer((req, res) => {
-    if (req.url === '/products') {
-        res.writeHead(200, {'Content-Type': 'application/json'})
-        res.end(JSON.stringify(prod)) //we get it as a string
+    //we check for the url path as well as post request
+    if (req.url === '/products' && req.method === 'GET') {
+        getProd(req, res)
     }else {
         res.writeHead(404, {'Content-Type': 'application/json'})
         res.end(JSON.stringify({mesage: 'Route Not Found.'}))
