@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "name": "samsung A20",
+        "description": "it has face unlock and a finger print scanner",
+        "price": 3000.00
+    },
+    {
+        "id": "1",
+        "name": "samsung A50",
+        "description": "it has face unlock and a finger print scanner",
+        "price": 6450.00
+    },
+    {
+        "id": "2",
+        "name": "samsung A21",
+        "description": "it has face unlock and a finger print scanner",
+        "price": 4000.00
+    },
+    {
+        "id": "3",
+        "name": "samsung A71",
+        "description": "it has face unlock and a finger print scanner",
+        "price": 7345.00
+    }
+]
+
