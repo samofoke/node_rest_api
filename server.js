@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
         getProd(req, res)
     } else if (req.url.match(/\/products\/([0-9]+)/) && req.method === 'GET') {
         
-        const id = req.url.split('/')[3]
+        const id = req.url.split('/')[2]
         getOne(req, res, id)
         
     }

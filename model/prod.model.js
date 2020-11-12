@@ -1,6 +1,6 @@
 const prod = require('../data/products.json')
 
-function find() {
+function findProd() {
     return new Promise((resolve, reject) => {
         resolve(prod)
     })
@@ -14,6 +14,6 @@ function findById(id) {
 }
 
 module.exports = {
-    find,
+    findProd,
     findById
 }
